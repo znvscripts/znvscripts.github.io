@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <title>ZNV SCRIPTS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="scripts.html">ZNV<span> SCRIPTS</span></a></div>
+            <ul class="menu">
+                <li><button class="btn-custom" onclick="location.href='scripts.html'">Home</button></li>
+                <li><button class="btn-custom" onclick="location.href='about.html'">Sobre nós</button></li>
+                <li><button class="btn-custom" onclick="location.href='contactos.html'">Contactos</button></li>
+                <li><button class="btn-custom" onclick="location.href='links.html'">Parcerias</button></li>
+                <div class="dropdown">
+                    <button class="btn-custom" onclick="showDropdown()">Itens</button>
+                      <div class="dropdown-content">
+                    <li><button class="btn-custom" onclick="location.href='produtos.html'">Produtos</button></li>
+                    <li><button class="btn-custom" id="menuu" onclick="location.href='leaks.html'">Leaks</button></li>
+                </div>
+                    </div>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+ 
+
+    <style>
+body {
+    background: url('image/banner-znv.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .text {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif, bold;
+            text-align: justify;
+            width: 80%;
+            line-height: 1.5;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 10px;
+            background-color: rgba(255,255,255,0.2);
+        }
+        .text p {
+            margin-bottom: 20px;
+        }
+        .text ul {
+            margin-left: 30px;
+            margin-bottom: 20px;
+        }
+        .text li {
+            margin-bottom: 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+            background-image: url('image/back.jpg');
+        }
+
+        .container {
+    padding-top: 60px;
+}
+
+                    }
+    </style>
+    
+    <div class="container">
+        <div class="text">
+            <p>ZNV começou com a criação do Discord simples. Com o crescimento desse canal e meu interesse pela programação, foram sendo acrescentados outros valores.</p>
+            <ul>
+                <li>Discord Config</li>
+                <li>Bots para Discord</li>
+                <li>Websites</li>
+                <li>Twitch Bot</li>
+                <li>E muito mais em breve...</li>
+            </ul>
+        </div>
+    </div>
+    
+ 
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

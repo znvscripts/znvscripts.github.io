@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/logo.png" type="image/png">
+  <title>ZNV SCRIPTS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="scroll-up-btn">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </div>
+  <div class="navbar">
+    <div class="max-width">
+      <div class="logo"><a href="scripts.html">ZNV<span> SCRIPTS</span></a></div>
+      <ul class="menu">
+        <li><button class="btn-custom" onclick="location.href='scripts.html'">Home</button></li>
+        <li><button class="btn-custom" onclick="location.href='about.html'">Sobre nós</button></li>
+        <li><button class="btn-custom" onclick="location.href='contactos.html'">Contactos</button></li>
+        <li><button class="btn-custom" onclick="location.href='links.html'">Parcerias</button></li>
+        <div class="dropdown">
+          <button class="btn-custom" onclick="showDropdown()">Itens</button>
+          <div class="dropdown-content">
+            <li><button class="btn-custom" onclick="location.href='produtos.html'">Produtos</button></li>
+            <li><button class="btn-custom" id="menuu" onclick="location.href='leaks.html'">Leaks</button></li>
+          </div>
+        </div>
+      </ul>
+      <div class="menu-btn">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
+  <style>
+    body {
+    background: url('image/banner-znv.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+  .card {
+    width: 550px;
+    height: 320px;
+    margin: 0 auto;
+    background-color: #222;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .tools {
+    display: flex;
+    align-items: center;
+    padding: 9px;
+  }
+
+  .circle {
+    padding: 0 4px;
+  }
+
+  .box {
+    display: inline-block;
+    align-items: center;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    border-radius: 50%;
+  }
+
+  .red {
+    background-color: #ff605c;
+  }
+
+  .yellow {
+    background-color: #ffbd44;
+  }
+
+  .green {
+    background-color: #00ca4e;
+  }
+
+  .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(25% - 20px);
+  max-width: 250px;
+  height: auto;
+  margin: 10px;
+}
+
+.circle {
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+}
+
+.box .circle .box {
+  width: 10px;
+  height: 10px;
+  margin: 0 2px;
+}
+  </style>
+
+
+  <style>
+    .btn-custom a {
+      color: #ffffff;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    .card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.imgs{
+        margin-top: 3%;
+      border-radius: 10%;
+      width: 90%;
+      height: auto;
+      max-height: 200px;
+}
+
+.gmail-logo {
+  margin-top: 5%;
+  width: 100px; /* Defina a largura desejada */
+  height: auto; /* A altura será ajustada automaticamente proporcionalmente à largura */
+  max-height: 100px; /* Defina a altura máxima desejada */
+}
+
+.gmail {
+margin-top: 14%;
+}
+
+
+.card__content h3 {
+  font-size: 24px;
+}
+
+.card__content .btn-custom {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      flex-wrap: wrap;
+    }
+
+    .box {
+      padding-top: 17%;
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    body {
+      background-image: linear-gradient(163deg, #000000 0%, #000000 100%);
+      height: 270vh;
+    }
+
+
+  }
+    h3 {
+    margin-top: 7%;
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 5px;
+    color: #ffffff; /* Cor desejada para o h3 */
+  }
+
+  h4 {
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    color: #ffffff; /* Cor desejada para o h4 */
+  }
+  </style>
+
+<div class="container">
+  <div class="box">
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <img src="image/discord-logo.png" alt="Produto" class="imgs">
+        <h3>Discord</h3>
+        <button class="btn-custom" onclick="location.href='https://discord.me/znv-scripts'" target="_blank">Discord</button>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <img src="image/tiktok-logo.png" alt="Produto" class="imgs">
+        <h3>Tik Tok</h3>
+        <button class="btn-custom" onclick="location.href='https://www.tiktok.com/@znv.scripts'"
+        target="_blank">Tik Tok</button>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <img src="image/youtube-logo.png" alt="Produto" class="imgs">
+        <h3>Youtube</h3>
+        <button class="btn-custom"
+              onclick="location.href='https://www.youtube.com/channel/UCfOHoilu-Q_Xy5vrfb8QO-Q'" target="_blank">Youtube</button>
+      </div>
+    </div>
+  </div>
+  <div class="box">
+    <div class="card">
+      <div class="tools">
+        <div class="circle">
+          <span class="red box"></span>
+        </div>
+        <div class="circle">
+          <span class="yellow box"></span>
+        </div>
+        <div class="circle">
+          <span class="green box"></span>
+        </div>
+      </div>
+      <div class="card__content">
+        <img src="image/logo.png" alt="Produto" class="gmail-logo">
+        <h3 class="gmail">Nosso Gmail:</h3>
+            <h4 class="mail">znvstore.best@gmail.com</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

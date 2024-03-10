@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.png" type="image/png">
+    <title>ZNV SCRIPTS</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* CSS do body */
+        body {
+    background: url('image/banner-znv.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+    </style>
+</head>
+
+
+
+</style>
+
+<body>
+
+    <div class="scroll-up-btn">
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </div>
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="scripts.html">ZNV<span> SCRIPTS</span></a></div>
+            <ul class="menu">
+                <li><button class="btn-custom" onclick="location.href='scripts.html'">Home</button></li>
+                <li><button class="btn-custom" onclick="location.href='about.html'">Sobre nós</button></li>
+                <li><button class="btn-custom" onclick="location.href='contactos.html'">Contactos</button></li>
+                <li><button class="btn-custom" onclick="location.href='links.html'">Parcerias</button></li>
+                <div class="dropdown">
+                    <button class="btn-custom" onclick="showDropdown()">Itens</button>
+                      <div class="dropdown-content">
+                    <li><button class="btn-custom" onclick="location.href='produtos.html'">Produtos</button></li>
+                    <li><button class="btn-custom" id="menuu" onclick="location.href='leaks.html'">Leaks</button></li>
+                </div>
+                    </div>
+            </ul>
+            <div class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookies -->
+    <div class="cookie-card">
+        <span class="title">🍪 Cookie Notice</span>
+        <p class="description">Nós utilizamos cookies para garantir que tenhas a melhor experiência em nosso site.
+        </p>
+        <div class="actions">
+            <button class="pref" onclick="location.href='https://discord.me/znv-scripts'" target="_blank">
+                Nosso Discord
+            </button>
+            <button class="accept">
+                Accept
+            </button>
+        </div>
+    </div>
+    <style>
+        .cookie-card {
+            max-width: 320px;
+            padding: 1rem;
+            background-color: #353535;
+            border-radius: 10px;
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.5s ease-out 1s;
+            animation: appear .6s linear alternate-reverse infinite;
+        }
+
+        @keyframes appear {
+            from {
+                transform: scale(0.98);
+            }
+
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .title {
+            font-weight: 600;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+        }
+
+        .description {
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            color: rgb(255, 255, 255);
+            font-family: Arial, sans-serif;
+        }
+
+        .description a {
+            --tw-text-opacity: 1;
+            color: rgb(59 130 246);
+        }
+
+        .description a:hover {
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 1rem;
+            -moz-column-gap: 1rem;
+            column-gap: 1rem;
+            flex-shrink: 0;
+        }
+
+        .pref {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: rgb(255, 0, 0);
+            -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+            transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+            border: none;
+            background-color: transparent;
+        }
+
+        .pref:hover {
+            color: rgb(255, 255, 255);
+        }
+
+        .pref:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+
+        .accept {
+            font-size: 0.75rem;
+            line-height: 1rem;
+            background-color: rgb(255, 0, 0);
+            font-weight: 500;
+            border-radius: 0.5rem;
+            color: #fff;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.625rem;
+            padding-bottom: 0.625rem;
+            border: none;
+            transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .accept:hover {
+            background-color: rgb(55 65 81);
+        }
+
+        .accept:focus {
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+        }
+    </style>
+    <script>
+        const cookieContainer = document.querySelector('.cookie-card');
+        const cookieButton = document.querySelector('.accept');
+
+        cookieButton.addEventListener('click', () => {
+            const date = new Date();
+            date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+            const expires = "; expires=" + date.toUTCString();
+
+            document.cookie = "cookie-consent=accepted" + expires + "; path=/";
+
+            cookieContainer.style.display = "none";
+        });
+
+        if (document.cookie.indexOf("cookie-consent=accepted") !== -1) {
+            cookieContainer.style.display = "none";
+        }
+    </script>
+
+    <!--notice-->
+  <style>
+    body {
+      background-color: #222;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      position: relative;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .card {
+      background-color: #222;
+      border-radius: 8px;
+      padding: 8px;
+      width: 300px; /* Largura */
+      position: absolute;
+      bottom: 20px; /* Distância da parte inferior */
+      right: 16px; /* Distância da parte direita */
+    }
+    
+    .card .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
+    
+    .card .header .profile-pic {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    
+    .card .header .username {
+      font-weight: bold;
+      font-size: 12px;
+    }
+    
+    .card .content {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    
+    .card .date {
+      font-size: 10px;
+      color: #bfc0c0;
+      margin-top: -10px;
+      margin-left: 5px;
+    }
+    
+    .card .image {
+      margin-bottom: 12px;
+    }
+    
+    .card .image img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    
+    .news-title {
+      position: absolute;
+      top: -24px; /* Distância da parte superior */
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+  /* Consulta de mídia para dispositivos móveis */
+  @media only screen and (max-width: 768px) {
+    .card {
+      width: 50%; /* Largura responsiva */
+      max-height: 210px; /* Largura máxima */
+      bottom: 20px; /* Distância da parte inferior */
+      top: 200px; /* Limpa a posição superior */
+      transform: translateX(-50%); /* Centraliza horizontalmente */
+      position: fixed; /* Fixa o card na janela de visualização */
+    }
+  }
+</style>
+
+  </style>
+  <div class="card">
+    <div class="news-title">Novidades</div>
+    <div class="header">
+      <img class="profile-pic" src="image/logo.png" alt="Profile Picture">
+      <div class="username">znv</div>
+    </div>
+    <div class="content">
+        Atualização na aba Contatos e uma nova aba para as Parcerias.
+    </div>
+    <div class="image">
+      <img src="news/June 7, 2023.png" alt="Tweet Image">
+    </div>
+    <div class="date">
+      June 7, 2023
+    </div>
+  </div>
+ 
+
+ 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
